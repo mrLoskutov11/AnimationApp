@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0117889B2912F41600569BF3 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117889A2912F41600569BF3 /* Animation.swift */; };
+		0117889D2912F42700569BF3 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117889C2912F42700569BF3 /* DataStore.swift */; };
 		013C5C2C29115D7500F168EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C5C2B29115D7500F168EA /* AppDelegate.swift */; };
 		013C5C2E29115D7500F168EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C5C2D29115D7500F168EA /* SceneDelegate.swift */; };
 		013C5C3029115D7500F168EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C5C2F29115D7500F168EA /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0117889A2912F41600569BF3 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		0117889C2912F42700569BF3 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		013C5C2829115D7500F168EA /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013C5C2B29115D7500F168EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		013C5C2D29115D7500F168EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011788972912F2EE00569BF3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				013C5C2F29115D7500F168EA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		011788982912F36700569BF3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				013C5C2B29115D7500F168EA /* AppDelegate.swift */,
+				013C5C2D29115D7500F168EA /* SceneDelegate.swift */,
+				013C5C3929115D7600F168EA /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		011788992912F3E500569BF3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				013C5C3129115D7500F168EA /* Main.storyboard */,
+				013C5C3629115D7600F168EA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0117889E2912F43A00569BF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0117889C2912F42700569BF3 /* DataStore.swift */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0117889F2912F49700569BF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0117889A2912F41600569BF3 /* Animation.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		013C5C1F29115D7500F168EA = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +105,12 @@
 		013C5C2A29115D7500F168EA /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				013C5C2B29115D7500F168EA /* AppDelegate.swift */,
-				013C5C2D29115D7500F168EA /* SceneDelegate.swift */,
-				013C5C2F29115D7500F168EA /* ViewController.swift */,
-				013C5C3129115D7500F168EA /* Main.storyboard */,
+				011788972912F2EE00569BF3 /* ViewControllers */,
+				0117889F2912F49700569BF3 /* Models */,
+				0117889E2912F43A00569BF3 /* Services */,
+				011788982912F36700569BF3 /* Config */,
+				011788992912F3E500569BF3 /* Storyboards */,
 				013C5C3429115D7600F168EA /* Assets.xcassets */,
-				013C5C3629115D7600F168EA /* LaunchScreen.storyboard */,
-				013C5C3929115D7600F168EA /* Info.plist */,
 			);
 			path = AnimationApp;
 			sourceTree = "<group>";
@@ -140,6 +188,8 @@
 			files = (
 				013C5C3029115D7500F168EA /* ViewController.swift in Sources */,
 				013C5C2C29115D7500F168EA /* AppDelegate.swift in Sources */,
+				0117889B2912F41600569BF3 /* Animation.swift in Sources */,
+				0117889D2912F42700569BF3 /* DataStore.swift in Sources */,
 				013C5C2E29115D7500F168EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
