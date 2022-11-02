@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
     @IBOutlet var coreAnimationView: UIView!
@@ -18,10 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet var startAnimationButton: UIButton!
     
-    
+    private var animation = Animation.getAnimation()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
 
